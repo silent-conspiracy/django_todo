@@ -1,4 +1,8 @@
-<h1>Current Reminders</h1>
+{% if name %}
+    <h1>Current Reminders for {{ name }}</h1>
+{% else %}
+    <h1>Current Reminders</h1>
+{% endif %}
 <ol>
     {% for reminder in reminders %}
         <li>{{ reminder }}</li>
