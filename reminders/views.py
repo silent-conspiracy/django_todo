@@ -3,4 +3,10 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'index.html', {"app_name": "Reminders App"})
+    return render(request, 'index.html', {
+        "app_name": "Reminders App",
+        "reminders": [
+            "Buy Breakfast",
+            "Buy Lunch"
+        ]
+    })
