@@ -3,8 +3,8 @@
 {% else %}
     <h1>Current Reminders</h1>
 {% endif %}
-<ol>
+<ul class="list-group">
     {% for reminder in reminders %}
-        <li>{{ reminder }}</li>
+        <li class="list-group-item">{{ reminder }}</li>
     {% endfor %}
-</ol>
+</ul>
