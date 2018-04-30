@@ -7,6 +7,7 @@ def index(request):
         "app_name": "Reminders App",
         "reminders": [
             "Buy Breakfast",
-            "Buy Lunch"
+            "Buy Lunch",
+            "Buy Dinner"
         ]
     })

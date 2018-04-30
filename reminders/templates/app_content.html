@@ -1,5 +1,6 @@
 <h1>Current Reminders</h1>
 <ol>
-    <li>{{ reminders.0 }}</li>
-    <li>{{ reminders.1 }}</li>
+    {% for reminder in reminders %}
+        <li>{{ reminder }}</li>
+    {% endfor %}
 </ol>
