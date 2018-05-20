@@ -1,3 +1,5 @@
+{% load static %}
+<img class="app-logo" src="{% static 'app-logo.png' %}" />
 {% if name %}
     <h1>Current Reminders for {{ name }}</h1>
 {% else %}
